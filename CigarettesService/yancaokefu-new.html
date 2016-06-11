@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <title>烟草客服</title>
+    <script src="style/js/flexible.js"></script>
+    <link rel="stylesheet" href="style/css/yancaokefu-new.css">
+</head>
+<body>
+        <!--header-->
+        <header class="f34">
+            服务评价
+        </header>
+        <!--header-->
+        <div class="content">
+            <div class="sec-carinfo">
+                <div class="sc-control">
+                    <div class="sc-control-left f30">客服编号</div>
+                    <div class="sc-control-right">
+                        <div class="sccr-cityJ-wrapper" id="chose-cityJ">
+                            <span class="sccr-cityJ  f28">地区</span>
+                            <div class="down-arrow"></div>
+                        </div>
+                        <div class="sccr-carLicense">
+                            <input type="text" placeholder="请输入完整的客服编号" class="license f28">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-info">
+                <div class="sc-control">
+                    <div class="sc-control-left f30">评价客服</div>
+                    <div class="sc-control-right arrow-after">
+                        <input type="text" class="f28" id="get-branch" placeholder="请选择相应客服" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="evaluate-info">
+                <div class="ei-top">
+                    <a href="" class="f28 marb">服务专业</a>
+                    <a href="" class="f28 marb">主动积极</a>
+                    <a href="" class="f28 marb">态度友好</a><br>
+                    <a href="" class="f28">服务一般</a>
+                    <a href="" class="f28">爱理不理</a>
+                    <a href="" class="f28">态度不好</a>
+                </div>
+                <div class="ei-bottom">
+                    <textarea class="f28" placeholder="您对服务人员满意吗？态度和服务如何？（填写信息不要少于10字哦~）"></textarea>
+                </div>
+            </div>
+            <button type="button" class="f34" id="sub-btn">提交</button>
+            <input type="hidden" name="id" id="branchId" value="">
+            <input type="hidden" name="phone" id="branchPhone" value="">
+            <input type="hidden" name="address" id="branchAddress" value="">
+        </div>
+        <!--省简弹出框-->
+        <div class="cover-bg"></div>
+        <dl class="cityJ-dialog">
+            <dd class="f30 active">朝阳</dd>
+            <dd class="f30">海淀</dd>
+            <dd class="f30">西城</dd>
+            <dd class="f30">东城</dd>
+            <dd class="f30">昌平</dd>
+            <dd class="f30">房山</dd>
+            <dd class="f30">通州</dd>
+            <dd class="f30">丰台</dd>
+            <dd class="f30 non-marr">顺义</dd>
+        </dl>
+        <!--省简称弹出框-->
+        <!--选择服务店面页面-->
+        <div id="branch-page">
+            <div class="header">
+                <div class="header-left-arrow" id="close-branch-page"></div>
+                <span class="f40">选择烟草客服</span>
+            </div>
+            <div class="branch-con" id="branch-con" style="margin-bottom:8%;">
+                <div id="loading" style="padding:20% 0;text-align:center;width:100%;">
+                    正在加载
+                </div>
+            </div>
+        </div>
+        <!--选择服务店面页面-->
+        <!--操作提示框-->
+        <div class="error-dialog">
+          <img src="style/img/icon-fail.png">
+          <p class="f34">xxxxxxxx</p>
+        </div>
+        <!--操作提示框-->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="style/js/util.js"></script>
+<script src="style/js/yancaokefu-new.js"></script>
+</body>
+</html>
